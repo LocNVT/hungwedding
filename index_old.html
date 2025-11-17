@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới - Tường Anh ❤️ Quốc Hưng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #d4af37;
+            --secondary: #8b7355;
+            --accent: #f5e6d3;
+            --dark: #2c2c2c;
+            --light: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section - Split Design */
+        .hero {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 60px;
+        }
+
+        .hero-left {
+            background: linear-gradient(135deg, var(--accent) 0%, #fff 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            position: relative;
+        }
+
+        .hero-left::before {
+            content: '❤️';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.05;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .hero-names {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-names h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-names .ampersand {
+            font-size: 2rem;
+            margin: 0 20px;
+            color: var(--secondary);
+        }
+
+        .hero-names .date {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-top: 30px;
+            letter-spacing: 3px;
+        }
+
+        .hero-right {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23f5e6d3" width="800" height="600"/><circle cx="400" cy="300" r="200" fill="%23d4af37" opacity="0.1"/></svg>') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-right::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(212,175,55,0.2) 0%, transparent 100%);
+        }
+
+        /* Countdown Section */
+        .countdown-section {
+            background: var(--dark);
+            color: var(--light);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .countdown-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .countdown-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            min-width: 120px;
+            border: 2px solid var(--primary);
+            backdrop-filter: blur(10px);
+        }
+
+        .countdown-box .number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .countdown-box .label {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        /* Wedding Info - Card Layout */
+        .info-section {
+            padding: 100px 20px;
+            background: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--dark);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .info-card {
+            background: var(--accent);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--primary);
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .info-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .info-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .info-card p {
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, var(--accent) 0%, var(--light) 100%);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: var(--primary);
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 45%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid var(--accent);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 4px solid white;
+            z-index: 1;
+        }
+
+        /* Gallery Masonry */
+        .gallery-section {
+            padding: 100px 20px;
+            background: var(--light);
+        }
+
+        .gallery {
+            columns: 3;
+            column-gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        /* RSVP Form */
+        .rsvp-section {
+            padding: 100px 20px;
+            background: var(--dark);
+            color: var(--light);
+        }
+
+        .rsvp-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--primary);
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: var(--light);
+            font-family: inherit;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background: var(--light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 2px solid var(--primary);
+        }
+
+        /* Music Control */
+        .music-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.1) rotate(15deg);
+        }
+
+        .music-btn span {
+            font-size: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            nav ul {
+                gap: 20px;
+                font-size: 12px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .gallery {
+                columns: 2;
+            }
+
+            .countdown {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .gallery {
+                columns: 1;
+            }
+
+            .hero-names h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#story">Câu chuyện</a></li>
+            <li><a href="#info">Thông tin</a></li>
+            <li><a href="#gallery">Album</a></li>
+            <li><a href="#rsvp">Xác nhận</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <div class="hero-names fade-in">
+                <h1>Tường Anh <span class="ampersand">&</span> Quốc Hưng</h1>
+                <p style="font-style: italic; color: #8b7355; margin-top: 20px;">
+                    "Tình yêu đích thực là khi hai trái tim hòa nhịp thành một"
+                </p>
+                <div class="date">27 • 12 • 2025</div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div style="width: 80%; height: 80%; background: rgba(255,255,255,0.9); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                💑
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+        <h2>Đếm ngược đến ngày trọng đại</h2>
+        <div class="countdown" id="countdown">
+            <div class="countdown-box">
+                <div class="number" id="days">00</div>
+                <div class="label">Ngày</div>
+            </div>
+            <div class="countdown-box">
+                <div class="number" id="hours">00</div>
+                <div class="label">Giờ</div>
+            </div>
+            <div class="countdown-box">
+                <div class="number" id="minutes">00</div>
+                <div class="label">Phút</div>
+            </div>
+            <div class="countdown-box">
+                <div class="number" id="seconds">00</div>
+                <div class="label">Giây</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Info -->
+    <section class="info-section" id="info">
+        <div class="container">
+            <h2 class="section-title">Thông tin lễ cưới</h2>
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <div class="icon">💒</div>
+                    <h3>Lễ Thành Hôn</h3>
+                    <p><strong>Thời gian:</strong> 06:00 PM</p>
+                    <p><strong>Ngày:</strong> 24/01/2026</p>
+                    <p><strong>Địa điểm:</strong> Nhà hàng Đông Phương 4</p>
+                    <p><strong>Địa chỉ:</strong> Nguyễn Văn Quá, TP.HCM</p>
+                </div>
+                <div class="info-card fade-in">
+                    <div class="icon">👰</div>
+                    <h3>Dress Code</h3>
+                    <p>Trang phục lịch sự</p>
+                    <p>Màu sắc: Pastel hoặc Earth Tone</p>
+                    <p style="margin-top: 20px; font-style: italic;">Vui lòng tránh màu trắng và đỏ</p>
+                </div>
+                <div class="info-card fade-in">
+                    <div class="icon">🗺️</div>
+                    <h3>Bản đồ</h3>
+                    <p>Nhà hàng tiệc cưới</p>
+                    <p>Đông Phương 4</p>
+                    <a href="https://maps.app.goo.gl/vxQK9tRDNQv6YXGq9" target="_blank" style="display: inline-block; margin-top: 20px; color: #d4af37; text-decoration: none; font-weight: 600;">📍 Xem Google Maps →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Story -->
+    <section class="timeline-section" id="story">
+        <div class="container">
+            <h2 class="section-title">Câu chuyện tình yêu</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2015 - Lần đầu gặp gỡ</h3>
+                        <p>Chúng tôi gặp nhau trong một buổi gặp mặt bạn bè...</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2018 - Bắt đầu hẹn hò</h3>
+                        <p>Sau 3 năm làm bạn, chúng tôi quyết định bước tiếp...</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2024 - Lời cầu hôn</h3>
+                        <p>Một ngày đáng nhớ khi anh ấy quỳ gối cầu hôn...</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2026 - Ngày cưới</h3>
+                        <p>Và cuối cùng, chúng tôi sẽ cùng nhau bước vào hôn nhân!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Album ảnh cưới</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500'%3E%3Crect fill='%23f5e6d3' width='400' height='500'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23f5e6d3' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='450'%3E%3Crect fill='%23f5e6d3' width='400' height='450'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350'%3E%3Crect fill='%23f5e6d3' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23f5e6d3' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23f5e6d3' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23d4af37'%3E📸%3C/text%3E%3C/svg%3E" alt="Photo 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--light);">Xác nhận tham dự</h2>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Số người tham dự</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 người</option>
+                        <option value="2">2 người</option>
+                        <option value="3">3 người</option>
+                        <option value="4">4 người</option>
+                        <option value="5+">5+ người</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Lời chúc (tùy chọn)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Gửi lời chúc đến cô dâu chú rể..."></textarea>
+                </div>
+                <button type="submit" class="btn">💌 Gửi xác nhận</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 10px;">Tường Anh & Quốc Hưng</p>
+        <p>Cảm ơn bạn đã đến chung vui cùng chúng tôi ❤️</p>
+        <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">© 2026 - Made with Love</p>
+    </footer>
+
+    <!-- Music Control -->
+    <div class="music-btn" id="musicBtn">
+        <span id="musicIcon">🎵</span>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const wedding = new Date('2025-12-27T18:00:00').getTime();
+            const now = new Date().getTime();
+            const diff = wedding - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // RSVP Form
+        document.getElementById('rsvpForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã xác nhận tham dự! 💕');
+            e.target.reset();
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Music Control
+        let isPlaying = false;
+        document.getElementById('musicBtn').addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            document.getElementById('musicIcon').textContent = isPlaying ? '⏸️' : '🎵';
+        });
+
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.info-card, .timeline-item, .gallery-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
