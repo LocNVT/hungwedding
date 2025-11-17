@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiệp Cưới - Tường Anh & Quốc Hưng</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
-    <!-- Stylesheet -->
-    <link href="./assets/css/styles.css" rel="stylesheet">
-
-    <script src="./assets/js/script.js"></script>
+    <script src="assets/js/script2.js" defer></script>
 </head>
 
 <body>
-    <!-- Hero Section - Save the Date -->
-   <section class="hero" id="hero">
-        <div class="hero-content fade-in">
-            <h1 id="brideGroomTitle">Tên cô dâu và chú rể</h1>
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="hero-banner fade-in">
+            <h1 id="brideGroomTitle">Quốc Hưng & Tường Anh</h1>
             <p class="tagline">"Tình yêu đích thực là khi hai trái tim hòa nhịp thành một"</p>
         </div>
     </section>
-    <section>
-        <div class="save-date-banner">
-            <h1>SAVE <span class="the">the</span> DATE</h1>
-            <div class="date-info">
-                <span>December 27</span>
-                <span>2025</span>
-            </div>
-        </div>
 
+    <section class="hero">
         <div class="hero-content">
+            <!-- <div class="hero-title">Tường Anh & Quốc Hưng</div>
+            <p class="tagline">"Tình yêu đích thực là khi hai trái tim hòa nhịp thành một"</p> -->
+
+            <div class="save-the-date">
+                <h2>SAVE <span class="the">the</span> DATE</h2>
+                <div class="date">December 27, 2025</div>
+            </div>
+
             <p class="invitation-text">
                 Trân trọng kính mời Quý Khách<br>
                 tới dự buổi tiệc mừng lễ thành hôn của hai chúng tôi
             </p>
 
             <div class="couple-names">
-                <h2>Nguyễn Lê Quốc Hưng</h2>
-                <p class="va">và</p>
-                <h2>Đặng Tường Anh</h2>
+                <h3>Nguyễn Lê Quốc Hưng</h3>
+                <div class="and">và</div>
+                <h3>Đặng Tường Anh</h3>
             </div>
 
             <div class="wedding-details">
                 <div class="detail-item">
                     <h4>NGÀY</h4>
-                    <p>27 - 12 - 2025</p>
+                    <p>27-12-2025</p>
                 </div>
                 <div class="detail-item">
                     <h4>GIỜ</h4>
@@ -58,37 +60,18 @@
             <div class="venue-info">
                 <p style="font-style: italic; margin-bottom: 10px;">Tại: Ngày 27 Tháng 12 năm Ất Tỵ</p>
                 <p><strong>Hội trường</strong></p>
-                <p style="font-size: 0.85rem; color: #999;">số 1234 đường ???</p>
+                <p style="font-size: 0.9rem; color: #999;">số 1234 đường ???</p>
             </div>
         </div>
-    </section>
-
-    <!-- Family Section -->
-    <section class="family-section">
-        <div class="family-grid">
-            <div class="family-side">
-                <h3>NHÀ TRAI</h3>
-                <p>Ông ???<br>Bà ???</p>
-            </div>
-            <div class="family-side">
-                <h3>NHÀ GÁI</h3>
-                <p>Ông ???<br>Bà ???</p>
-            </div>
-        </div>
-
-        <div class="family-photo">👨‍👩‍👧‍👦</div>
-        <p class="hugs-kisses">HUGS and KISSES</p>
     </section>
 
     <!-- Calendar Section -->
     <section class="calendar-section">
-        <div class="calendar-header">
-            <h2>Calendar</h2>
-            <h3>THÁNG 12</h3>
-            <p class="year">2025</p>
-        </div>
-
-        <div class="calendar-display">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h2>Tháng 12</h2>
+                <p class="year">2025</p>
+            </div>
             <div class="calendar-grid">
                 <div class="calendar-day header">M</div>
                 <div class="calendar-day header">T</div>
@@ -137,34 +120,167 @@
         </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section class="timeline-section">
-        <div class="timeline-header">
-            <div class="rings">💍</div>
-            <h2>TIMELINE</h2>
-            <p class="time">11:30 AM<br>LỄ CƯỚI</p>
-        </div>
+    <!-- Parents Section -->
+    <section class="parents-section">
+        <div class="parents-container">
+            <div class="parents-header">
+                <div class="header-icon">👨‍👩‍👧‍👦</div>
+                <h2>Gia Đình Hai Bên</h2>
+                <p>Trân trọng giới thiệu</p>
+            </div>
 
-        <div class="timeline-event">
-            <div class="timeline-photo">🏛️</div>
-            <div class="timeline-content">
-                <p style="text-align: center; color: #999;">Chương trình chi tiết sẽ được cập nhật</p>
+            <div class="parents-grid">
+                <div class="parent-side groom-side">
+                    <div class="side-icon">🤵</div>
+                    <h3>NHÀ TRAI</h3>
+                    <div class="parent-info">
+                        <div class="parent-item">
+                            <span class="parent-label">Ba:</span>
+                            <span class="parent-name">Ông Nguyễn Văn A</span>
+                        </div>
+                        <div class="parent-item">
+                            <span class="parent-label">Mẹ:</span>
+                            <span class="parent-name">Bà Trần Thị B</span>
+                        </div>
+                    </div>
+                    <div class="decorative-line"></div>
+                </div>
+
+                <div class="heart-divider">
+                    <div class="heart-icon">💕</div>
+                </div>
+
+                <div class="parent-side bride-side">
+                    <div class="side-icon">👰</div>
+                    <h3>NHÀ GÁI</h3>
+                    <div class="parent-info">
+                        <div class="parent-item">
+                            <span class="parent-label">Ba:</span>
+                            <span class="parent-name">Ông Đặng Văn C</span>
+                        </div>
+                        <div class="parent-item">
+                            <span class="parent-label">Mẹ:</span>
+                            <span class="parent-name">Bà Lê Thị D</span>
+                        </div>
+                    </div>
+                    <div class="decorative-line"></div>
+                </div>
+            </div>
+
+            <div class="blessing-text">
+                <p>"Hai gia đình trở thành một, cùng chung niềm hạnh phúc"</p>
             </div>
         </div>
     </section>
 
-    <!-- Bride & Groom Profiles -->
+    <!-- Timeline Section -->
+    <!-- <section class="timeline-section">
+        <div class="timeline-header">
+            <div class="timeline-icon">💍</div>
+            <h2>Timeline</h2>
+            <p class="time">11:30 AM<br>Lễ Cưới</p>
+        </div>
+        <div class="timeline-content">
+            <p>Chương trình chi tiết sẽ được cập nhật</p>
+        </div>
+    </section> -->
+
+    <!-- Album Section -->
+    <section class="album-section">
+        <div class="album-container">
+            <div class="album-header">
+                <h2>Album Ảnh Cưới</h2>
+                <p>Những khoảnh khắc đẹp nhất của chúng tôi</p>
+            </div>
+
+            <div class="album-grid">
+                <div class="album-item" data-index="0">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 1" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Ngày đầu gặp gỡ</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="1">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 2" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Tình yêu đích thực</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="2">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 3" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Hoa cưới tươi đẹp</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="3">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 4" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Khoảnh khắc hạnh phúc</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="4">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 5" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Hạnh phúc bên nhau</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="5">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 6" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Mãi mãi bên em</p> -->
+                    </div>
+                </div>
+                  <div class="album-item" data-index="6">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 5" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Hạnh phúc bên nhau</p> -->
+                    </div>
+                </div>
+                <div class="album-item" data-index="7">
+                    <img src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Wedding Photo 6" class="album-photo">
+                    <div class="album-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <!-- <p style="color: white; margin-top: 10px; font-size: 1.2rem;">Mãi mãi bên em</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Album Modal -->
+    <div class="album-modal" id="albumModal">
+        <span class="modal-close">&times;</span>
+        <button class="modal-prev">❮</button>
+        <button class="modal-next">❯</button>
+        <div class="modal-content">
+            <div class="modal-image" id="modalImage">📸</div>
+            <p class="modal-caption" id="modalCaption">Ảnh cưới</p>
+        </div>
+    </div>
+
+    <!-- Profiles Section -->
     <section class="profiles-section">
         <div class="profile-grid">
             <div class="profile-card">
-                <div class="profile-photo">👰</div>
+                <div class="profile-photo"><img
+                        src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Album Image"
+                        style='height: 100%; width: 100%; object-fit: contain'></div>
                 <div class="profile-info">
                     <p class="role">Cô dâu</p>
                     <h3>Tường Anh</h3>
                 </div>
             </div>
             <div class="profile-card">
-                <div class="profile-photo">🤵</div>
+                <div class="profile-photo"><img
+                        src="./assets/images/578792686_4145088262381125_8706124705216850285_n.jpg" alt="Album Image"
+                        style='height: 100%; width: 100%; object-fit: contain'></div>
                 <div class="profile-info">
                     <p class="role">Chú rể</p>
                     <h3>Quốc Hưng</h3>
@@ -176,29 +292,28 @@
     <!-- RSVP Section -->
     <section class="rsvp-section">
         <div class="rsvp-container">
-            <div class="rsvp-photo">💑</div>
-            <h2>BAN SẼ ĐẾN CHỨ?</h2>
+            <div class="rsvp-icon">💑</div>
+            <h2>Bạn Sẽ Đến Chứ?</h2>
             <p>
                 Đám cưới của chúng tôi sẽ trọn vẹn với sự hiện diện của quý khách.
                 Vui lòng xác nhận thông tin dự đoán để chúng tôi dễ dàng chuẩn bị
-                tiếp đón mỗi cách chu đáo nhất. Trân trọng!
+                tiếp đón mọi cách chu đáo nhất. Trân trọng!
             </p>
 
             <form class="rsvp-form" id="rsvpForm">
                 <div class="form-group">
-                    <label for="name">Tên của Quý khách*</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <label for="name">Tên của Quý khách *</label>
+                    <input type="text" id="name" name="name" placeholder="Họ và tên" required>
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Số điện thoại</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại">
                 </div>
 
                 <div class="form-group">
                     <label for="message">Gửi những lời chúc tốt đẹp nhất</label>
-                    <textarea id="message" name="message"
-                        placeholder="Type here or Film a video to let us have your kind blessings"></textarea>
+                    <textarea id="message" name="message" placeholder="Lời chúc của bạn..."></textarea>
                 </div>
 
                 <div class="form-group">
@@ -219,28 +334,16 @@
     </section>
 
     <!-- Music Control -->
-    <div class="music-control" id="musicControl" aria-label="Điều khiển nhạc nền">
+    <div class="music-control" id="musicControl" role="button" aria-label="Điều khiển nhạc nền">
         <span id="musicIcon">🎵</span>
-    </div>
-    <audio id="backgroundMusic" loop preload="auto">
-        <source src="" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Hidden Audio Element -->
-    <audio id="backgroundMusic" loop>
-        <!-- Thay thế bằng URL nhạc nền của bạn -->
-        <source src="https://www.youtube.com/watch?v=JgTZvDbaTtg&ab_channel=14Casper" type="audio/mpeg">
-    </audio>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">
-        <span id="toastMessage">Cảm ơn bạn đã xác nhận tham dự!</span>
     </div>
 
     <!-- Scroll Up Button -->
-    <div class="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        ↑
+    <div class="scroll-up" id="scrollUp">↑</div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toastMessage">Cảm ơn bạn đã xác nhận tham dự!</span>
     </div>
 
 
