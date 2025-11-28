@@ -139,6 +139,48 @@ function forceAutoPlay(musicIcon) {
 const musicControl = document.getElementById("musicControl");
 const musicIcon = document.getElementById("musicIcon");
 
+// Countdown Timer
+function initCountdown() {
+  const weddingDate = new Date("2025-12-27T11:30:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance < 0) {
+      document.getElementById("days").textContent = "00";
+      document.getElementById("hours").textContent = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("minutes").textContent = String(minutes).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("seconds").textContent = String(seconds).padStart(
+      2,
+      "0"
+    );
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+
 // Scroll Up Button
 const scrollUpBtn = document.getElementById("scrollUp");
 window.addEventListener("scroll", () => {
@@ -438,6 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
   createFloatingHearts();
   initMusicControl();
   initRSVPForm();
+  initCountdown(); // Initialize countdown timer
 
   // Add entrance animations
   const observer = new IntersectionObserver(
