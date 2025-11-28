@@ -49,7 +49,6 @@
 body {
   font-family: "FzAmericanTypewriter-Medium", "Times New Roman", serif;
   background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
-  /* padding: 20px; */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -57,8 +56,7 @@ body {
 }
 
 .container {
-  /* max-width: 600px; */
-  width: 100%;
+  /* width: 100%; */
   background: white;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   border: 8px solid #8b0000;
@@ -71,6 +69,7 @@ body {
   height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
@@ -94,15 +93,16 @@ body {
   font-size: 47px;
   position: absolute;
   bottom: 32%;
+  padding: 0 20px;
 }
 
 .save-date {
   background: #8b0000;
   color: white;
-  /* padding: 2px 4px; */
   text-align: center;
   margin: -110px auto 0;
   width: 670px;
+  max-width: 90%;
   position: relative;
   z-index: 2;
 }
@@ -123,14 +123,14 @@ body {
 
 .couple-names {
   text-align: center;
-  padding: 40px 30px 20px;
+  /* padding: 40px 30px 20px; */
 }
 
 .couple-names h1 {
   font-family: "TH Maginia", serif;
   font-size: 100px;
   color: #333;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -139,8 +139,8 @@ body {
   font-family: "TH Maginia", serif;
   font-size: 100px;
   font-style: italic;
-  margin: -30px 0 -10px;
-  color: #666;
+  margin: -40px 0 -30px;
+  /* color: #666; */
 }
 
 .parents {
@@ -148,7 +148,7 @@ body {
   padding: 2px 40px;
   font-size: 15px;
   color: #555;
-  line-height: 1.8;
+  line-height: 1.1;
 }
 
 .parents-grid {
@@ -165,7 +165,7 @@ body {
 
 .parent-section h3 {
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .parent-section p {
@@ -179,6 +179,7 @@ body {
 
 .wedding-photo {
   text-align: center;
+  padding: 20px 0;
 }
 
 .photo-placeholder {
@@ -192,14 +193,16 @@ body {
   align-items: center;
   justify-content: center;
   color: #999;
+  min-height: 200px;
 }
 
 .ceremony-details {
   font-family: "FzAmericanTypewriter-Light", serif;
   font-size: 40px;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
   color: #333;
+  padding: 20px;
 }
 
 .ceremony-details strong {
@@ -254,13 +257,13 @@ body {
 
 .important {
   text-align: center;
+  padding: 20px;
 }
 
 .important-event {
   font-family: "SVN Magellin", serif;
-  font-size: 40px;
+  font-size: 50px;
   font-style: italic;
-  /* margin: 10px 0; */
 }
 
 .important-note {
@@ -278,7 +281,7 @@ body {
 .timeline-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   margin-bottom: 15px;
   margin-top: 20px;
 }
@@ -286,21 +289,22 @@ body {
 .timeline-photo-placeholder {
   width: 80%;
   height: 80vh;
+  min-height: 400px;
   background: url("../images/Layout2535_05.jpg") no-repeat center center;
   background-size: cover;
   background-color: #f0f0f0;
-  margin: 0 auto;
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   color: #999;
 }
 
 .timeline-details {
-  margin-left: 20%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 
 .timeline h3 {
@@ -316,12 +320,12 @@ body {
   display: flex;
   align-items: center;
   margin: 15px 0;
+  flex-wrap: wrap;
 }
 
 .timeline-item .time {
-  /* width: 120px; */
-  /* font-weight: bold; */
   color: #333;
+  margin-right: 10px;
 }
 
 .timeline-message {
@@ -336,7 +340,7 @@ body {
 
 .album-section {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   background: #f5f5f5;
 }
 
@@ -370,19 +374,12 @@ body {
   padding: 30px 40px;
   background: white;
   text-align: left;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .guest-info p {
   margin: 8px 0;
   line-height: 1.6;
-}
-
-.confirmation-section strong {
-  color: #8b0000;
-  font-size: 30px;
-  display: block;
-  margin: 15px 0;
 }
 
 .confirmation-section {
@@ -393,73 +390,1068 @@ body {
   text-align: center;
 }
 
-
-/* .footer {
-  text-align: center;
-  padding: 30px;
-  background: #8b0000;
-  color: white;
+.confirmation-section strong {
+  color: #8b0000;
+  font-size: 30px;
+  display: block;
+  margin: 15px 0;
 }
-
-.footer .signature {
-  font-size: 24px;
-  font-style: italic;
-  margin-bottom: 10px;
-} */
 
 .signature {
   font-family: "SVN Magellin", serif;
   font-size: 40px;
   font-style: italic;
-  /* margin-top: -200px; */
   text-align: center;
+  padding: 20px;
 }
 
 .countdown-section {
+  padding: 30px 40px;
+  /* text-align: center; */
   margin-top: -210px;
   margin-left: 10%;
 }
 
 .countdown-title {
   font-family: "SVN Magellin", serif;
-  font-size: 40px;
+  font-size: 50px;
   font-style: italic;
-  margin: 10px 0;
-}
-
-.countdown-title {
-  font-family: "SVN Magellin", serif;
-  font-size: 40px;
-  font-style: italic;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .countdown {
   font-family: "SVN Magellin", serif;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-@media (max-width: 768px) {
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1079px) {
   .container {
-    border-width: 4px;
-    max-width: 600px;
+    width: 100%;
   }
 
   .header {
-    height: 20vh;
+    height: 60vh;
   }
 
+  .header-text {
+    font-size: 60px;
+  }
+
+  .header-quote {
+    font-size: 20px;
+    bottom: 35%;
+  }
+
+  .save-date {
+    width: 40%;
+    margin: -55px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 40px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 80px;
+  }
+
+  .parent-section {
+    font-size: 30px;
+  }
+
+  .invitation-text {
+    font-size: 30px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 30px;
+  }
+
+  #calendar-month {
+    font-size: 32px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .important-event,
+  .important-note {
+    font-size: 32px;
+  }
+
+  .important-note {
+    margin: -40px 0px -10px 250px;
+  }
+
+  .timeline-item,
+  .timeline-message {
+    font-size: 25px;
+  }
+
+  .timeline-photo-placeholder {
+    height: 50vh;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 32px;
+  }
+
+  .guest-info,
+  .confirmation-section {
+    font-size: 24px;
+  }
+
+  .confirmation-section strong {
+    font-size: 24px;
+  }
+
+  .signature,
+  .countdown-title {
+    font-size: 32px;
+  }
+
+  .countdown {
+    font-size: 28px;
+  }
+}
+
+/* Mobile Screens (481px - 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    border-width: 4px;
+  }
+
+  .header {
+    height: 60vh;
+  }
+
+  .header-text {
+    font-size: 48px;
+  }
+
+  .header-quote {
+    font-size: 16px;
+    bottom: 40%;
+    /* padding: 0 30px; */
+  }
+
+  .save-date {
+    margin: -60px auto 0;
+    width: 85%;
+  }
+  .save-date {
+    width: 40%;
+    margin: -40px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 30px;
+  }
+
+  .couple-names {
+    padding: 30px 20px 15px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 48px;
+  }
+
+  .couple-names .and {
+    margin: -20px 0 -10px;
+  }
+
+  .parents {
+    padding: 2px 20px;
+  }
+
+  .parents-grid {
+    /* grid-template-columns: 1fr; */
+    gap: 15px;
+  }
+
+  .parent-section {
+    font-size: 22px;
+  }
+
+  .invitation-text {
+    font-size: 22px;
+  }
+
+  .photo-placeholder {
+    width: 80%;
+    height: 25vh;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  #calendar-month {
+    font-size: 24px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .important {
+    padding: 15px;
+  }
+
+  .important-event {
+    font-size: 24px;
+  }
+
+  .important-note {
+    font-size: 24px;
+    margin: -3% 0 0 25%;
+  }
+
+  .timeline {
+    padding: 20px 15px;
+  }
+
+  .timeline-grid {
+    /* grid-template-columns: 1fr; */
+    gap: 20px;
+  }
+
+  .timeline-photo-placeholder {
+    height: 30vh;
+    order: 2;
+  }
+
+  .timeline-details {
+    margin-left: 0;
+    order: 1;
+    padding: 10px;
+  }
+
+  .timeline-item {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .timeline-message {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .album-section {
+    padding: 30px 15px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 24px;
+  }
+
+  .guest-info {
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .confirmation-section {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .confirmation-section strong {
+    font-size: 20px;
+  }
+
+  .signature {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .countdown-section {
+    padding: 20px;
+    margin-top: -100px;
+    margin-left: 10%;
+  }
+
+  .countdown-title {
+    font-size: 24px;
+  }
+
+  .countdown {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobile Screens (320px - 480px) */
+@media (max-width: 480px) {
+  .container {
+    border-width: 3px;
+  }
+
+  .header {
+    height: 50vh;
+  }
+
+  .header-text {
+    font-size: 28px;
+  }
+
+  .header-quote {
+    font-size: 9px;
+    bottom: 35%;
+    /* padding: 0 20px; */
+  }
+
+  .save-date {
+    margin: -40px auto 0;
+    width: 90%;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 28px;
+  }
+
+  .couple-names {
+    padding: 20px 15px 10px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 32px;
+  }
+
+  .couple-names .and {
+    margin: -15px 0 -5px;
+  }
+
+  .parents {
+    padding: 2px 15px;
+  }
+
+  .parent-section {
+    font-size: 16px;
+  }
+
+  .invitation-text {
+    font-size: 16px;
+  }
+
+  .photo-placeholder {
+    width: 90%;
+    height: 20vh;
+    min-height: 150px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #calendar-month {
+    font-size: 18px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .important {
+    padding: 10px;
+  }
+
+  .important-event {
+    font-size: 18px;
+  }
+
+  .important-note {
+    font-size: 18px;
+    margin: -20px 0 0 110px;
+  }
+
+  .timeline {
+    padding: 15px 10px;
+  }
+
+  .timeline-photo-placeholder {
+    height: 30vh;
+    min-height: 200px;
+  }
+
+  .timeline-details {
+    padding: 0;
+  }
+
+  .timeline-item {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+
+  .timeline-message {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .album-section {
+    padding: 20px 10px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 18px;
+  }
+
+  .guest-info {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .confirmation-section {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .confirmation-section strong {
+    font-size: 16px;
+  }
+
+  .signature {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .countdown-section {
+    padding: 15px;
+  }
+
+  .countdown-title {
+    font-size: 18px;
+  }
+
+  .countdown {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Extra Small Screens (below 320px) */
+@media (max-width: 320px) {
   .header-text {
     font-size: 24px;
   }
 
-  .couple-names h1 {
-    font-size: 32px;
+  .header-quote {
+    font-size: 14px;
   }
 
-  .parents-grid {
-    grid-template-columns: 1fr;
+  .save-date h2,
+  .save-date .date {
+    font-size: 22px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 26px;
+  }
+
+  .parent-section,
+  .invitation-text,
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 14px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .timeline-item,
+  .timeline-message,
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 14px;
+  }
+
+  .guest-info,
+  .confirmation-section {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1279px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 80px;
+  }
+
+  .header-quote {
+    font-size: 25px;
+    bottom: 40%;
+  }
+
+  .save-date {
+    width: 40%;
+    margin: -70px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 50px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 80px;
+  }
+
+  .parent-section {
+    font-size: 20px;
+  }
+
+  .invitation-text {
+    font-size: 20px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 20px;
+  }
+
+  #calendar-month {
+    font-size: 30px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .important-event,
+  .important-note {
+    font-size: 35px;
+  }
+
+  .timeline-item,
+  .timeline-message {
+    font-size: 25px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 35px;
+  }
+
+  .guest-info {
+    font-size: 20px;
+  }
+
+  .confirmation-section {
+    font-size: 20px;
+  }
+
+  .confirmation-section strong {
+    font-size: 20px;
+  }
+
+  .signature,
+  .countdown-title {
+    font-size: 35px;
+  }
+
+  .countdown {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1544px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 95px;
+  }
+
+  .header-quote {
+    font-size: 30px;
+    bottom: 35%;
+  }
+
+  .save-date {
+    width: 40%;
+    margin: -90px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 60px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 70px;
+  }
+
+  .parent-section {
+    font-size: 25px;
+  }
+
+  .invitation-text {
+    font-size: 25px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 25px;
+  }
+
+  #calendar-month {
+    font-size: 30px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 90px;
+    height: 90px;
+    font-size: 20px;
+  }
+
+  .important-event,
+  .important-note {
+    font-size: 35px;
+  }
+
+  .timeline-item,
+  .timeline-message {
+    font-size: 25px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 35px;
+  }
+
+  .guest-info {
+    font-size: 25px;
+  }
+
+  .confirmation-section {
+    font-size: 25px;
+  }
+
+  .confirmation-section strong {
+    font-size: 25px;
+  }
+
+  .signature,
+  .countdown-title {
+    font-size: 35px;
+  }
+
+  .countdown {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1545px) and (max-width: 1744px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 100px;
+  }
+
+  .header-quote {
+    font-size: 35px;
+    bottom: 35%;
+  }
+
+  .save-date {
+    width: 40%;
+    margin: -90px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 70px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 80px;
+  }
+
+  .parent-section {
+    font-size: 30px;
+  }
+
+  .invitation-text {
+    font-size: 30px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 30px;
+  }
+
+  #calendar-month {
+    font-size: 30px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+  }
+
+  .important-event,
+  .important-note {
+    font-size: 45px;
+  }
+
+  .timeline-item,
+  .timeline-message {
+    font-size: 30px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 45px;
+  }
+
+  .guest-info {
+    font-size: 30px;
+  }
+
+  .confirmation-section {
+    font-size: 30px;
+  }
+
+  .confirmation-section strong {
+    font-size: 30px;
+  }
+
+  .signature,
+  .countdown-title {
+    font-size: 45px;
+  }
+
+  .countdown {
+    font-size: 38px;
+  }
+}
+
+/* Large Desktop Screens (1440px - 1800px) */
+@media (min-width: 1745px) and (max-width: 1939px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 100px;
+  }
+
+  .header-quote {
+    font-size: 40px;
+    bottom: 35%;
+  }
+
+  .save-date {
+    width: 750px;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 80px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 90px;
+  }
+
+  .parent-section {
+    font-size: 35px;
+  }
+
+  .invitation-text {
+    font-size: 35px;
+  }
+
+  .ceremony-details,
+  .ceremony-details strong {
+    font-size: 35px;
+  }
+
+  #calendar-month {
+    font-size: 35px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+  }
+
+  .important-event,
+  .important-note {
+    font-size: 45px;
+  }
+
+  .timeline-item,
+  .timeline-message {
+    font-size: 35px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 35px;
+  }
+
+  .guest-info {
+    font-size: 35px;
+  }
+
+  .confirmation-section {
+    font-size: 35px;
+  }
+
+  .confirmation-section strong {
+    font-size: 35px;
+  }
+
+  .signature,
+  .countdown-title {
+    font-size: 45px;
+  }
+
+  .countdown {
+    font-size: 38px;
+  }
+}
+
+/* Extra Large Desktop Screens (1800px and above) */
+@media (min-width: 1940px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 140px;
+  }
+
+  .header-quote {
+    font-size: 100% larger;
+    bottom: 30%;
+  }
+
+  .save-date {
+    width: 40%;
+    margin: -120px auto 0;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 100px;
+  }
+
+  .couple-names {
+    padding: 50px 40px 30px;
+  }
+
+  .couple-names h1,
+  .couple-names .and {
+    font-size: 130px;
+  }
+
+  .couple-names .and {
+    margin: -40px 0 -20px;
+  }
+
+  .parents {
+    padding: 10px 50px;
+  }
+
+  .parent-section {
+    font-size: 50px;
+  }
+
+  .parent-section h3 {
+    margin-bottom: 12px;
+  }
+
+  .invitation-text {
+    font-size: 50px;
+  }
+
+  .photo-placeholder {
+    width: 35%;
+    height: 35vh;
+    min-height: 300px;
+  }
+
+  .ceremony-details {
+    font-size: 50px;
+    padding: 30px;
+  }
+
+  .ceremony-details strong {
+    font-size: 50px;
+    margin: 15px 0;
+  }
+
+  .calendar {
+    padding: 30px;
+  }
+
+  #calendar-month {
+    font-size: 50px;
+  }
+
+  .calendar table {
+    margin: 20px auto;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 100px;
+    height: 100px;
+    font-size: 26px;
+  }
+
+  .important {
+    padding: 30px;
+  }
+
+  .important-event {
+    font-size: 50px;
+  }
+
+  .important-note {
+    font-size: 50px;
+    margin: -60px 0 -15px 0;
+  }
+
+  .timeline {
+    padding: 30px 60px;
+  }
+
+  .timeline-grid {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .timeline-photo-placeholder {
+    height: 90vh;
+    min-height: 500px;
+  }
+
+  .timeline-details {
+    margin-left: 5%;
+    padding: 30px;
+  }
+
+  .timeline-item {
+    font-size: 50px;
+    margin: 20px 0;
+  }
+
+  .timeline-message {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .album-section {
+    padding: 50px 30px;
+  }
+
+  .album-section h3,
+  .album-section-quote,
+  .album-section-guestbook {
+    font-size: 50px;
+  }
+
+  .guest-info {
+    font-size: 38px;
+    padding: 40px 60px;
+    margin-left: 15%;
+  }
+
+  .guest-info p {
+    margin: 12px 0;
+    line-height: 1.8;
+  }
+
+  .confirmation-section {
+    font-size: 38px;
+    padding: 40px 60px;
+  }
+
+  .confirmation-section strong {
+    font-size: 38px;
+    margin: 20px 0;
+  }
+
+  .signature {
+    font-size: 50px;
+    padding: 30px;
+  }
+
+  .countdown-section {
+    padding: 40px 60px;
+  }
+
+  .countdown-title {
+    font-size: 50px;
+    margin: 15px 0;
+  }
+
+  .countdown {
+    font-size: 42px;
+    letter-spacing: 3px;
   }
 }
