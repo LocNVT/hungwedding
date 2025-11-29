@@ -428,11 +428,81 @@ body {
   letter-spacing: 2px;
 }
 
-.coppyright-section{
+.copyright-section{
   font-size: 0.8rem;
   text-align: center;
   color: #c0bfbf;
 }
+
+
+/* ============================= IMAGE SLIDER STYLES  ============================= */
+   
+.slider-section {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  transition: opacity 0.6s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.nav-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
 
 /* =============================
    LARGE TABLET (≤1280px)
@@ -815,6 +885,10 @@ body {
   .countdown-title {
     font-size: 1.4rem;
   }
+
+  .copyright-section{
+  font-size: 0.5rem;
+}
 }
 
 /* =============================
