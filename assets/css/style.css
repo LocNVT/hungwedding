@@ -392,19 +392,26 @@ body {
   margin: 15px 0;
 }
 
+.signature-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
 .signature {
   font-family: "SVN Magellin", serif;
   font-size: 40px;
   font-style: italic;
   text-align: center;
-  padding: 20px;
 }
 
 .countdown-section {
-  padding: 30px 40px;
-  /* text-align: center; */
-  margin-top: -210px;
+  /* padding: 30px 40px; */
   margin-left: 10%;
+  /* text-align: center; */
+  /* margin-top: -210px;
+  margin-left: 10%; */
 }
 
 .countdown-title {
@@ -416,9 +423,15 @@ body {
 
 .countdown {
   font-family: "SVN Magellin", serif;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+.coppyright-section{
+  font-size: 0.8rem;
+  text-align: center;
+  color: #c0bfbf;
 }
 
 /* =============================
@@ -499,7 +512,7 @@ body {
   }
 
   .timeline-item {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-left: 0;
     margin-left: 0;
     margin: 5px 0;
@@ -526,13 +539,13 @@ body {
     font-size: 32px;
   }
 
-  .countdown-section {
+  /* .countdown-section {
     margin-top: -15%;
     margin-left: 5%;
-  }
+  } */
 
   .countdown {
-    font-size: 32px;
+    font-size: 1.6rem;
   }
 }
 
@@ -648,16 +661,20 @@ body {
     font-size: 28px;
   }
 
-  .countdown-section {
+  /* .countdown-section {
     margin-top: -18%;
     margin-left: 5%;
+  } */
+
+  .countdown-section{
+    margin-left: 2%;
   }
 
   .countdown-title {
     font-size: 24px;
   }
   .countdown {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -679,7 +696,8 @@ body {
 
   .header-quote {
     font-size: 0.6rem;
-    bottom: 38%;
+    bottom: 35%;
+    padding: 0 1% 0 1%;
   }
 
   .save-date {
@@ -784,17 +802,17 @@ body {
     padding: 0;
   }
 
-  .countdown-section {
+  /* .countdown-section {
     margin-top: -25%;
     margin-left: 5%;
-  }
+  } */
 
-  .countdown-title,
   .countdown {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
 
-  .signature {
+  .signature,
+  .countdown-title {
     font-size: 1.4rem;
   }
 }
@@ -894,13 +912,11 @@ body {
     font-size: 12px;
   }
 
-  .countdown-section {
-    margin-top: -26%;
-    /* margin-left: 2%; */
-    padding: 10px 10px;
-  }
-
   .countdown {
     font-size: 0.6rem;
+  }
+
+  .signature{
+    font-size: 1rem;
   }
 }
