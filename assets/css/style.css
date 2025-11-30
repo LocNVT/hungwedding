@@ -92,16 +92,29 @@ body {
   font-style: italic;
   font-size: 1.8rem;
   position: absolute;
-  bottom: 35%;
+  /* bottom: 35%; */
+  left: 0;
   padding: 0 20px;
 }
+
+/* .header-quote {
+  font-family: "FzAmericanTypewriter-Light", serif;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 35%;
+  padding: 0 20px;
+} */
 
 .save-date {
   background: #8b0000;
   color: white;
   text-align: center;
-  margin: -110px auto 0;
-  width: 670px;
+  margin: -5% auto 0;
+  width: 35%;
   max-width: 90%;
   position: relative;
   z-index: 2;
@@ -109,20 +122,21 @@ body {
 
 .save-date h2 {
   font-family: "FzAmericanTypewriter-Light", serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-style: italic;
   margin-bottom: 0px;
 }
 
 .save-date .date {
   font-family: "FzAmericanTypewriter-Light", serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: -10px;
 }
 
 .couple-names {
   text-align: center;
+  margin-top: 5%;
   /* padding: 40px 30px 20px; */
 }
 
@@ -139,7 +153,7 @@ body {
   font-family: "TH Maginia", serif;
   font-size: 5rem;
   font-style: italic;
-  line-height: 0.4;
+  line-height: 0.5;
   /* margin: -40px 0 -30px; */
   /* color: #666; */
 }
@@ -149,7 +163,7 @@ body {
   padding: 2px 40px;
   font-size: 1.2rem;
   color: #555;
-  line-height: 1.1;
+  line-height: 1.8;
 }
 
 .parents-grid {
@@ -201,7 +215,7 @@ body {
   font-family: "FzAmericanTypewriter-Light", serif;
   font-size: 40px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #333;
   padding: 20px;
 }
@@ -275,8 +289,8 @@ body {
 }
 
 .timeline {
-  padding: 20px 40px;
-  background: #f9f9f9;
+  padding: 20px 0;
+  /* background: #f9f9f9; */
 }
 
 .timeline-grid {
@@ -335,7 +349,7 @@ body {
 .album-section {
   text-align: center;
   padding: 40px 20px;
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
 }
 
 .album-section h3 {
@@ -350,14 +364,14 @@ body {
 
 .album-section-quote {
   font-family: "SVN Magellin", serif;
-  font-size: 40px;
+  font-size: 3rem;
   font-style: italic;
   margin: 10px 0;
 }
 
 .guest-section-guestbook {
   font-family: "SVN Magellin", serif;
-  font-size: 40px;
+  font-size: 3rem;
   font-style: italic;
   margin: 10px 0;
   text-align: center;
@@ -366,15 +380,86 @@ body {
 .guest-info {
   font-family: "FzAmericanTypewriter-Light", serif;
   font-size: 30px;
-  padding: 30px 40px;
+  padding: 0 40px;
   background: white;
   text-align: left;
-  margin-left: 10%;
 }
 
 .guest-info p {
   margin: 8px 0;
   line-height: 1.6;
+}
+
+/* Confirmation section */
+.rsvp-form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px 28px;
+  background: #ffffffd9;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Input + Textarea */
+.rsvp-form input,
+.rsvp-form textarea {
+  width: 100%;
+  padding: 15px 16px;
+  margin: 12px 0;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  outline: none;
+  transition: 0.25s;
+}
+
+/* Focus effect */
+.rsvp-form input:focus,
+.rsvp-form textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 8px rgba(200, 122, 122, 0.35);
+  background: #fff;
+}
+
+/* Placeholder */
+.rsvp-form input::placeholder,
+.rsvp-form textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Textarea */
+.rsvp-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #555, #333);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, rgba(51, 51, 51, 0.466), #33333393);
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
 }
 
 .confirmation-section {
@@ -393,9 +478,9 @@ body {
 }
 
 .signature-section {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
+  gap: 5px; */
   margin-bottom: 15px;
 }
 
@@ -406,17 +491,9 @@ body {
   text-align: center;
 }
 
-.countdown-section {
-  /* padding: 30px 40px; */
-  margin-left: 10%;
-  /* text-align: center; */
-  /* margin-top: -210px;
-  margin-left: 10%; */
-}
-
 .countdown-title {
   font-family: "SVN Magellin", serif;
-  font-size: 50px;
+  font-size: 3rem;
   font-style: italic;
   /* margin: 10px 0; */
 }
@@ -428,15 +505,48 @@ body {
   letter-spacing: 2px;
 }
 
-.copyright-section{
+.countdown-section {
+  text-align: center;
+}
+
+/* Khung bao quanh */
+fieldset {
+  max-width: 420px;
+  margin: 10px auto;
+  padding: 25px 20px;
+  border-radius: 18px;
+  border: 1px solid #000000; /* màu hồng nhạt sang trọng */
+  background: #ffffffea;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+
+/* Title (legend) */
+fieldset legend {
+  margin: 0 auto;
+  padding: 0 12px;
+  text-align: center;
+}
+
+/* Countdown số */
+.countdown {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #333; /* đỏ trầm cưới */
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.copyright-section {
   font-size: 0.8rem;
   text-align: center;
   color: #c0bfbf;
 }
 
-
 /* ============================= IMAGE SLIDER STYLES  ============================= */
-   
+
 .slider-section {
   width: 100%;
   max-width: 900px;
@@ -469,7 +579,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -477,11 +587,15 @@ body {
   font-size: 20px;
   border-radius: 50%;
 }
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
 
 .nav-btn:hover {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .dots {
@@ -503,6 +617,51 @@ body {
   background: #333;
 }
 
+/* ===== MUSIC CONTROL ===== */
+.music-control {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-gold));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 20px var(--shadow);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.music-control:hover {
+  transform: scale(1.1);
+}
+
+.music-control span {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+/* ===== TOAST NOTIFICATION ===== */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #9b9b9b, #cebdbd);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px var(--shadow);
+  z-index: 1001;
+  transform: translateX(400px);
+  transition: transform 0.3s ease;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
 
 /* =============================
    LARGE TABLET (≤1280px)
@@ -514,18 +673,19 @@ body {
   .header-text {
     font-size: 3.5rem;
   }
+
   .header-quote {
     font-size: 1.3rem;
-    bottom: 35%;
+    /* bottom: 35%; */
   }
 
-  .save-date {
+  /* .save-date {
     width: 55%;
-    margin-top: -70px;
-  }
+    margin-top: -50px;
+  } */
   .save-date h2,
   .save-date .date {
-    font-size: 55px;
+    font-size: 2rem;
   }
 
   .couple-names h1,
@@ -544,8 +704,8 @@ body {
   }
 
   .photo-placeholder {
-    height: 20vh;
-    width: 60%;
+    height: 25vh;
+    width: 50%;
   }
 
   #calendar-month {
@@ -606,7 +766,7 @@ body {
 
   .signature,
   .countdown-title {
-    font-size: 32px;
+    font-size: 3rem;
   }
 
   /* .countdown-section {
@@ -615,7 +775,12 @@ body {
   } */
 
   .countdown {
-    font-size: 1.6rem;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #333; /* đỏ trầm cưới */
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
   }
 }
 
@@ -630,21 +795,24 @@ body {
   .header {
     height: 55vh;
   }
+
   .header-text {
-    font-size: 2.3rem;
-  }
-  .header-quote {
-    font-size: 1.2rem;
-    bottom: 30%;
+    font-size: 2.5rem;
   }
 
-  .save-date {
+  .header-quote {
+    font-size: 1.2rem;
+    /* bottom: 30%; */
+  }
+
+  /* .save-date {
     width: 55%;
     margin-top: -45px;
-  }
+  } */
+
   .save-date h2,
   .save-date .date {
-    font-size: 32px;
+    font-size: 1.6rem;
   }
 
   .couple-names h1,
@@ -670,12 +838,13 @@ body {
   .ceremony-details strong {
     font-size: 22px;
     padding: 10px;
-    line-height: 1;
+    /* line-height: 1; */
   }
 
   #calendar-month {
-    font-size: 24px;
+    font-size: 2rem;
   }
+
   .calendar th,
   .calendar td {
     width: 45px;
@@ -684,15 +853,16 @@ body {
   }
 
   .important-event {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .important-note {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: -5% 0px -10px 28%;
   }
 
   .timeline-photo-placeholder {
+    width: 95%;
     height: 40vh;
     order: 2;
   }
@@ -723,12 +893,18 @@ body {
     padding: 20px;
   }
 
+  .guest-section-guestbook {
+    font-size: 2rem;
+  }
+
   .confirmation-section {
     font-size: 18px;
   }
 
-  .signature {
-    font-size: 28px;
+  .signature,
+  .countdown-section legend,
+  .countdown-section .countdown {
+    font-size: 2rem;
   }
 
   /* .countdown-section {
@@ -736,7 +912,7 @@ body {
     margin-left: 5%;
   } */
 
-  .countdown-section{
+  /* .countdown-section {
     margin-left: 2%;
   }
 
@@ -745,6 +921,20 @@ body {
   }
   .countdown {
     font-size: 1rem;
+  } */
+}
+
+/* =============================
+   MOBILE (≤578px)
+============================= */
+@media (max-width: 578px) {
+  .header-text {
+    font-size: 2rem;
+  }
+
+  .save-date h2,
+  .save-date .date {
+    font-size: 1.2rem;
   }
 }
 
@@ -765,19 +955,14 @@ body {
   }
 
   .header-quote {
-    font-size: 0.6rem;
-    bottom: 35%;
-    padding: 0 1% 0 1%;
-  }
-
-  .save-date {
-    width: 65%;
-    margin-top: -35px;
+    font-size: 0.8rem;
+    /* bottom: 35%; */
+    /* padding: 0 1% 0 1%; */
   }
 
   .save-date h2,
   .save-date .date {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .couple-names {
@@ -803,7 +988,7 @@ body {
   .ceremony-details,
   .ceremony-details strong {
     font-size: 1rem;
-    line-height: 1;
+    /* line-height: 1; */
   }
 
   #calendar-month {
@@ -866,6 +1051,20 @@ body {
     font-size: 0.8rem;
   }
 
+  .rsvp-form {
+    padding: 22px 18px;
+  }
+
+  /* Input + Textarea */
+  .rsvp-form input,
+  .rsvp-form textarea {
+    font-size: 12px;
+  }
+
+  .submit-btn {
+    font-size: 0.8rem;
+  }
+
   .confirmation-section,
   .confirmation-section strong {
     font-size: 1rem;
@@ -877,18 +1076,22 @@ body {
     margin-left: 5%;
   } */
 
-  .countdown {
-    font-size: 0.7rem;
+  /* .countdown {
+    font-size: 1.4rem;
+  } */
+
+  .countdown-section fieldset {
+    margin: 10px;
   }
 
   .signature,
   .countdown-title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
-  .copyright-section{
-  font-size: 0.5rem;
-}
+  .copyright-section {
+    font-size: 0.5rem;
+  }
 }
 
 /* =============================
@@ -902,6 +1105,7 @@ body {
   .header-text {
     font-size: 1rem;
   }
+
   .header-quote {
     font-size: 0.6rem;
   }
@@ -990,7 +1194,7 @@ body {
     font-size: 0.6rem;
   }
 
-  .signature{
+  .signature {
     font-size: 1rem;
   }
 }
