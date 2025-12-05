@@ -91,8 +91,7 @@ body {
   text-align: center;
   font-style: italic;
   font-size: 1.8rem;
-  position: absolute;
-  /* bottom: 35%; */
+  /* position: absolute; */
   left: 0;
   padding: 0 20px;
 }
@@ -113,7 +112,7 @@ body {
   background: #8b0000;
   color: white;
   text-align: center;
-  margin: -5% auto 0;
+  margin: -3% auto 0;
   width: 35%;
   max-width: 90%;
   position: relative;
