@@ -1,18 +1,20 @@
 // ===== CONFIGURATION - CHỈNH SỬA THÔNG TIN TẠI ĐÂY =====
 const CONFIG = {
   // URL Google Maps (thay đổi theo địa chỉ thật)
-  mapUrl:
-    "https://maps.google.com/maps?q=Nguyen+Van+Qua,+District+12,+Ho+Chi+Minh+City",
+  mapUrl: "",
 
   // URL nhạc nền (thay bằng link nhạc của bạn)
   musicUrl: "./assets/music/Kho Báu.mp3",
 
   // URL Google Apps Script Web App (sau khi deploy)
-  googleSheetsUrl:
-    "https://script.google.com/macros/s/AKfycbxB9Dp7Toh6MFJovZ4-Ycr4I9gqKwQRwnLTyLlB2YF7mm7YM22LBkYu6cDT55GvwzVX/exec",
+  googleSheetsUrl_Post:
+    "https://script.google.com/macros/s/AKfycbwcS8NNHtcBmq6kSu1gWH0uXnfqvZ7Tu198Jt-dPsMyuesZrIQK8z0gWGXE_unPoHxa8Q/exec",
+
+  googleSheetsUrl_Get:
+    "https://script.google.com/macros/s/AKfycbydLV4gDrcQ0DVPggbwsTOf1S6Y6R-JaXG__KCeC0WghfOXXOCWrSsDkseWQRzSb5rfvg/exec",
 
   // ID Google Sheets (lấy từ URL sheets)
-  googleSheetsId: "1UTJaIhmdPYQznCw_i29xrv-7Yv-6LuPxgLs83Dt9OdM",
+  googleSheetsId: "1wfIC_4yJx75gBVarrlW0ocdN4zyxYbUNuvUYS5kTLWc",
 
   // Bật/tắt chế độ offline (lưu localStorage khi không kết nối được Sheets)
   offlineMode: true,
@@ -218,6 +220,7 @@ function forceAutoPlay(musicIcon) {
 // ===== RSVP FORM =====
 function initRSVPForm() {
   const rsvpForm = document.getElementById("rsvpForm");
+  console.log("RSVP Form initialized:", rsvpForm);
   if (!rsvpForm) {
     console.warn("RSVP form not found");
     return;
@@ -305,8 +308,9 @@ async function handleRSVPSubmit(e) {
 
 // ===== FUNCTION GỬI DỮ LIỆU ĐẾN GOOGLE SHEETS =====
 async function sendToGoogleSheets(data) {
+  console.log("Sending data to post Google Sheets:", data);
   try {
-    const response = await fetch(CONFIG.googleSheetsUrl, {
+    const response = await fetch(CONFIG.googleSheetsUrl_Post, {
       method: "POST",
       mode: "no-cors", // Important for Google Apps Script
       headers: {
@@ -314,6 +318,7 @@ async function sendToGoogleSheets(data) {
       },
       body: JSON.stringify(data),
     });
+    console.log("Google Sheets response:", response);
 
     // no-cors mode không trả về response, assume success
     return true;
@@ -330,8 +335,8 @@ async function sendToGoogleSheets(data) {
         invitedBy: data.invitedBy,
         timestamp: data.timestamp,
       });
-
-      await fetch(`${CONFIG.googleSheetsUrl}?${params}`, {
+      console.log("Sending data to get Google Sheets:", params);
+      await fetch(`${CONFIG.googleSheetsUrl_Get}?${params}`, {
         method: "GET",
         mode: "no-cors",
       });
