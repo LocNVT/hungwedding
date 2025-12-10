@@ -193,7 +193,7 @@ body {
   margin-top: 5%;
   font-family: "FzAmericanTypewriter-Light", serif;
   font-size: 2.5rem;
-  padding: 0 10% 0 10%;
+  padding: 0 5px 5px;
 }
 
 .wedding-photo {
@@ -204,7 +204,7 @@ body {
 .photo-placeholder {
   width: 40%;
   height: 30vh;
-  background: url("../images/Layout2535_05.jpg") no-repeat center center;
+  background: url("../images/GAU02015.JPG") no-repeat center center;
   background-size: cover;
   background-color: #f0f0f0;
   margin: 0 auto;
@@ -225,6 +225,11 @@ body {
   padding: 20px;
 }
 
+.ceremony-details h3 {
+  font-family: "FzAmericanTypewriter-Medium", serif;
+  color: #555;
+}
+
 .ceremony-details strong {
   font-size: 40px;
   display: block;
@@ -239,6 +244,11 @@ body {
   /* line-height: 1.8; */
   color: #333;
   padding: 20px;
+}
+
+.address-section h3 {
+  font-family: "FzAmericanTypewriter-Medium", serif;
+  color: #555;
 }
 
 .calendar {
@@ -321,7 +331,7 @@ body {
   width: 80%;
   height: 70vh;
   min-height: 30vh;
-  background: url("../images/Layout2535_05.jpg") no-repeat center center;
+  background: url("../images/GAU04563.JPG") no-repeat center center;
   background-size: cover;
   background-color: #f0f0f0;
   display: flex;
@@ -505,6 +515,7 @@ body {
   font-size: 40px;
   font-style: italic;
   text-align: center;
+  margin-top: 5%;
 }
 
 .countdown-title {
