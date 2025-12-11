@@ -430,7 +430,8 @@ body {
 
 /* Input + Textarea */
 .rsvp-form input,
-.rsvp-form textarea {
+.rsvp-form textarea,
+.rsvp-form select {
   width: 100%;
   padding: 15px 16px;
   margin: 12px 0;
@@ -444,7 +445,8 @@ body {
 
 /* Focus effect */
 .rsvp-form input:focus,
-.rsvp-form textarea:focus {
+.rsvp-form textarea:focus
+.rsvp-form select:focus {
   border-color: #000000;
   box-shadow: 0 0 8px rgba(200, 122, 122, 0.35);
   background: #fff;

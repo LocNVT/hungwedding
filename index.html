@@ -58,7 +58,7 @@
                     <p>Bà: Dương Thị Vân</p>
                 </div>
             </div>
-            <p class="invitation-text">Trân trọng kính mời Quý Khách đến tham dự <br/>
+            <p class="invitation-text">Trân trọng kính mời Quý Khách đến tham dự <br />
                 LỄ THÀNH HÔN của hai con chúng tôi
             </p>
         </div>
@@ -71,7 +71,7 @@
             <p>Tiệc thân mật được tổ chức vào lúc</p>
             <h3>18 giờ 00 phút - Thứ Bảy</h3>
             <h3>Ngày 27 tháng 12 năm 2025</h3>
-             <!-- <p><b>18 giờ 00 phút - Thứ Bảy</b></p>
+            <!-- <p><b>18 giờ 00 phút - Thứ Bảy</b></p>
             <p><b>Ngày 27 tháng 12 năm 2025</b></p> -->
             <p>(Nhằm ngày 08 tháng 11 năm Ất Tỵ)</p>
         </div>
@@ -175,17 +175,13 @@
 
             <section class="slider-section">
                 <div class="slider-container">
-                    <div class="slide active"><img
-                            src="./assets/images/DUKE3144.jpg" /></div>
+                    <div class="slide active"><img src="./assets/images/DUKE3144.jpg" /></div>
                     <div class="slide"><img src="./assets/images/DUKE3454.jpg" /></div>
-                    <div class="slide"><img
-                            src="./assets/images/DSCF1426.jpg" /></div>
+                    <div class="slide"><img src="./assets/images/DSCF1426.jpg" /></div>
                     <div class="slide"><img src="./assets/images/DSCF1677.jpg" /></div>
-                    <div class="slide"><img
-                            src="./assets/images/GAU02909.JPG" /></div>
+                    <div class="slide"><img src="./assets/images/GAU02909.JPG" /></div>
                     <div class="slide"><img src="./assets/images/GAU03446.JPG" /></div>
-                    <div class="slide"><img
-                            src="./assets/images/GAU04580.JPG" /></div>
+                    <div class="slide"><img src="./assets/images/GAU04580.JPG" /></div>
 
                     <button class="nav-btn prev">❮</button>
                     <button class="nav-btn next">❯</button>
@@ -204,16 +200,27 @@
 
                 <textarea id="message" name="message" placeholder="Gửi lời nhắn đến cô dâu chú rể"></textarea>
 
-                <input type="text" id="attend" name="attend" placeholder="Quý vị sẽ đến chứ?">
+                <!-- Attend -->
+                <select id="attend" name="attend">
+                    <option value="" disabled selected>Quý vị sẽ đến chứ?</option>
+                    <option value="yes">Có, tham dự được 😍</option>
+                    <option value="no">Không, bận mất rồi 🥺</option>
+                </select>
 
                 <input type="number" id="quantity" name="quantity" placeholder="Số người tham dự (kể cả quý vị)">
 
-                <input type="text" id="invitedBy" name="invitedBy" placeholder="Quý vị là khách mời của">
+                <!-- InvitedBy -->
+                <select id="invitedBy" name="invitedBy">
+                    <option value="" disabled selected>Quý vị là khách mời của</option>
+                    <option value="Quốc Hưng">Chú rể Quốc Hưng</option>
+                    <option value="Tường Anh">Cô dâu Tường Anh</option>
+                </select>
 
                 <button type="submit" class="submit-btn">
                     <strong>Gửi lời nhắn và xác nhận</strong>
                 </button>
             </form>
+
 
         </div>
         <div class="confirmation-section">
