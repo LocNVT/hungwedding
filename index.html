@@ -15,12 +15,23 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="header-text">
+            <!-- <div class="header-text">
                 Quốc Hưng & Tường Anh
+
+                <div class="header-quote">
+                    Một câu chuyện tình thời niên thiếu được nuôi dưỡng, nảy mầm và đơm hoa kết trái
+                </div>
+            </div> -->
+            <div class="header-text-container">
+                <p class="header-text">Quốc Hưng & Tường Anh</p>
+
+                <p class="header-quote">
+                    Một câu chuyện tình thời niên thiếu được nuôi dưỡng, nảy mầm và đơm hoa kết trái
+                </p>
             </div>
-            <div class="header-quote">
+            <!-- <div class="header-quote">
                 Một câu chuyện tình thời niên thiếu được nuôi dưỡng, nảy mầm và đơm hoa kết trái
-            </div>
+            </div> -->
         </div>
 
         <div class="save-date">
@@ -38,14 +49,17 @@
             <div class="parents-grid">
                 <div class="parent-section">
                     <h3>NHÀ TRAI</h3>
-                    <p>Ông: Lê Văn Hải<br>Bà: Nguyễn Thị Mỹ Thủy</p>
+                    <p>Ông: Lê Văn Hải</p>
+                    <p>Bà: Nguyễn Thị Mỹ Thủy</p>
                 </div>
                 <div class="parent-section">
                     <h3>NHÀ GÁI</h3>
-                    <p>Ông: Đặng Sơn Hải<br>Bà: Dương Thị Vân</p>
+                    <p>Ông: Đặng Sơn Hải</p>
+                    <p>Bà: Dương Thị Vân</p>
                 </div>
             </div>
-            <p class="invitation-text">Trân trọng kính mời Quý Khách<br>đến tham dự LỄ THÀNH HÔN của hai con chúng tôi
+            <p class="invitation-text">Trân trọng kính mời Quý Khách đến tham dự <br />
+                LỄ THÀNH HÔN của hai con chúng tôi
             </p>
         </div>
 
@@ -55,12 +69,15 @@
 
         <div class="ceremony-details">
             <p>Tiệc thân mật được tổ chức vào lúc</p>
-            <strong>18 giờ 00 phút - Thứ Bảy</strong>
-            <strong>Ngày 27 tháng 12 năm 2025</strong>
+            <h3>18 giờ 00 phút - Thứ Bảy</h3>
+            <h3>Ngày 27 tháng 12 năm 2025</h3>
+            <!-- <p><b>18 giờ 00 phút - Thứ Bảy</b></p>
+            <p><b>Ngày 27 tháng 12 năm 2025</b></p> -->
             <p>(Nhằm ngày 08 tháng 11 năm Ất Tỵ)</p>
-            <p><strong>Tại: TRUNG TÂM HỘI NGHỊ WHITE PALACE</strong>
-                <strong>SẢNH ALPAS 2</strong>
-            </p>
+        </div>
+        <div class="address-section">
+            <h3>Tại: TRUNG TÂM HỘI NGHỊ WHITE PALACE</h3>
+            <h3>SẢNH ALPAS 2</h3>
             <p>194 Hoàng Văn Thụ, Phường Đức Nhiệm, TP. Hồ Chí Minh</p>
         </div>
 
@@ -109,7 +126,7 @@
                     <td>24</td>
                     <td>25</td>
                     <td>26</td>
-                    <td class="highlight">27</td>
+                    <td class="highlight"><span>27</span></td>
                     <td>28</td>
                 </tr>
                 <tr>
@@ -152,34 +169,75 @@
         </div>
 
 
-        <!-- <div class="wedding-photo">
-            <div class="photo-placeholder">Couple Photo</div>
-        </div> -->
-
         <div class="album-section">
             <h3>Album Hình Cưới</h3>
             <p class="album-section-quote">Từng khoảnh khắc là một kỷ niệm khó quên</p>
+
+            <section class="slider-section">
+                <div class="slider-container">
+                    <div class="slide active"><img src="./assets/images/DUKE3144.jpg" /></div>
+                    <div class="slide"><img src="./assets/images/DUKE3454.jpg" /></div>
+                    <div class="slide"><img src="./assets/images/DSCF1426.jpg" /></div>
+                    <div class="slide"><img src="./assets/images/DSCF1677.jpg" /></div>
+                    <div class="slide"><img src="./assets/images/GAU02909.JPG" /></div>
+                    <div class="slide"><img src="./assets/images/GAU03446.JPG" /></div>
+                    <div class="slide"><img src="./assets/images/GAU04580.JPG" /></div>
+
+                    <button class="nav-btn prev">❮</button>
+                    <button class="nav-btn next">❯</button>
+
+                    <div class="dots"></div>
+                </div>
+            </section>
         </div>
 
         <div class="guest-info">
             <p class="guest-section-guestbook">Sổ lưu bút</p>
 
-            <p>Tên của quý vị</p>
-            <p>Gửi lời nhắn đến cô dâu chú rể</p>
-            <p>Quý vị sẽ đến chứ?</p>
-            <p>Quý vị tham dự cùng ai (số lượng bao gồm quý vị)</p>
-            <p>Quý vị là khách mời của</p>
+
+            <form class="rsvp-form" id="rsvpForm">
+                <input type="text" id="name" name="name" placeholder="Tên của quý vị">
+
+                <textarea id="message" name="message" placeholder="Gửi lời nhắn đến cô dâu chú rể"></textarea>
+
+                <!-- Attend -->
+                <select id="attend" name="attend">
+                    <option value="" disabled selected>Quý vị sẽ đến chứ?</option>
+                    <option value="yes">Có, tham dự được 😍</option>
+                    <option value="no">Không, bận mất rồi 🥺</option>
+                </select>
+
+                <input type="number" id="quantity" name="quantity" placeholder="Số người tham dự (kể cả quý vị)">
+
+                <!-- InvitedBy -->
+                <select id="invitedBy" name="invitedBy">
+                    <option value="" disabled selected>Quý vị là khách mời của</option>
+                    <option value="Quốc Hưng">Chú rể Quốc Hưng</option>
+                    <option value="Tường Anh">Cô dâu Tường Anh</option>
+                </select>
+
+                <button type="submit" class="submit-btn">
+                    <strong>Gửi lời nhắn và xác nhận</strong>
+                </button>
+            </form>
+
+
         </div>
         <div class="confirmation-section">
-            <strong>Gửi lời nhắn và xác nhận</strong>
             <p>Cảm ơn quý vị và gia đình rất nhiều<br>vì đã gửi những lời chúc mừng tốt đẹp nhất<br>đến tham dự của hai
                 con chúng tôi.</p>
         </div>
 
         <div class="signature-section">
             <div class="countdown-section">
-                <div class="countdown-title">Time</div>
-                <div class="countdown" id="countdown">34 : 09 : 53 : 48</div>
+                <fieldset>
+                    <legend>
+                        <div class="countdown-title">Time</div>
+                    </legend>
+                    <div class="countdown" id="countdown">34 : 09 : 53 : 48</div>
+                </fieldset>
+                <!-- <div class="countdown-title">Time</div>
+                <div class="countdown" id="countdown">34 : 09 : 53 : 48</div> -->
             </div>
 
             <div class="signature">Thank You</div>
@@ -187,9 +245,20 @@
         </div>
 
         <div class="footer">
-            <p class="coppyright-section">© 2025 Developed by LucasN</p>
+            <p class="copyright-section">© 2025 Developed by LucasN</p>
         </div>
-    </div>
+
+        <!-- Music Control -->
+        <div class="music-control" id="musicControl" aria-label="Điều khiển nhạc nền">
+            <div class="music-control" id="musicControl" role="button" aria-label="Điều khiển nhạc nền">
+                <span id="musicIcon">🎵</span>
+            </div>
+        </div>
+
+        <!-- Toast -->
+        <div class="toast" id="toast">
+            <span id="toastMessage">Cảm ơn bạn đã xác nhận tham dự!</span>
+        </div>
 </body>
 
 </html>
