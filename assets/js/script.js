@@ -4,7 +4,7 @@ const CONFIG = {
   mapUrl: "",
 
   // URL nhạc nền (thay bằng link nhạc của bạn)
-  musicUrl: "./assets/music/Kho Báu.mp3",
+  musicUrl: "./assets/music/HappyEnding.mp3",
 
   // URL Google Apps Script Web App (sau khi deploy)
   googleSheetsUrl_Post:
@@ -220,7 +220,6 @@ function forceAutoPlay(musicIcon) {
 // ===== RSVP FORM =====
 function initRSVPForm() {
   const rsvpForm = document.getElementById("rsvpForm");
-  console.log("RSVP Form initialized:", rsvpForm);
   if (!rsvpForm) {
     console.warn("RSVP form not found");
     return;
