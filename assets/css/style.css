@@ -443,6 +443,13 @@ body {
   transition: 0.25s;
 }
 
+.rsvp-form select {
+  color: #333 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
 /* Focus effect */
 .rsvp-form input:focus,
 .rsvp-form textarea:focus
