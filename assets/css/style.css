@@ -202,17 +202,12 @@ body {
 }
 
 .photo-placeholder {
-  width: 40%;
-  height: 30vh;
+  width: 50%;
+  aspect-ratio: 3 / 2; /* hoặc 16/9 tùy hình */
   background: url("../images/GAU02015.JPG") no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   background-color: #f0f0f0;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  min-height: 200px;
 }
 
 .ceremony-details {
@@ -327,7 +322,7 @@ body {
   margin-top: 20px;
 }
 
-.timeline-photo-placeholder {
+/* .timeline-photo-placeholder {
   width: 80%;
   height: 70vh;
   min-height: 30vh;
@@ -338,6 +333,19 @@ body {
   align-items: center;
   justify-content: center;
   color: #999;
+} */
+.timeline-photo-placeholder {
+  width: 80%;
+  /* aspect-ratio: 2 / 3; */
+  aspect-ratio: 1 / 2;
+  background: url("../images/GAU04563.JPG") no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  order: 2;
 }
 
 .timeline-details {
@@ -346,6 +354,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  order: 1;
 }
 
 .timeline-item {
@@ -745,13 +754,13 @@ fieldset legend {
   }
 
   .address-section {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
-  .photo-placeholder {
+  /* .photo-placeholder {
     height: 25vh;
     width: 50%;
-  }
+  } */
 
   #calendar-month {
     font-size: 2.5;
@@ -778,9 +787,8 @@ fieldset legend {
   }
 
   .timeline-details {
-    order: 1;
     padding: 0px;
-    margin-left: 2%;
+    /* margin-left: 10%; */
   }
 
   .timeline-grid {
@@ -798,10 +806,10 @@ fieldset legend {
     text-align: center;
   }
 
-  .timeline-photo-placeholder {
+  /* .timeline-photo-placeholder {
     height: 50vh;
     order: 2;
-  }
+  } */
 
   .album-section h3,
   .album-section-quote,
@@ -887,10 +895,10 @@ fieldset legend {
     font-size: 1.4rem;
   }
 
-  .photo-placeholder {
+  /* .photo-placeholder {
     width: 80%;
     height: 25vh;
-  }
+  } */
 
   .ceremony-details,
   .ceremony-details strong {
@@ -900,7 +908,7 @@ fieldset legend {
   }
 
   .address-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   #calendar-month {
@@ -923,17 +931,17 @@ fieldset legend {
     margin: -5% 0px -10px 28%;
   }
 
-  .timeline-photo-placeholder {
+  /* .timeline-photo-placeholder {
     width: 95%;
     height: 40vh;
     order: 2;
-  }
+  } */
 
-  .timeline-details {
+  /* .timeline-details {
     order: 1;
     padding: 10px;
     margin-left: 2%;
-  }
+  } */
 
   .timeline-grid {
     gap: 5px;
@@ -1011,12 +1019,8 @@ fieldset legend {
     padding: 0;
   }
 
-  .photo-placeholder {
-    height: 20vh;
-  }
-
   .address-section {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .timeline-item {
@@ -1088,11 +1092,11 @@ fieldset legend {
     font-size: 0.9rem;
   }
 
-  .photo-placeholder {
+  /* .photo-placeholder {
     width: 90%;
     height: 15vh;
     min-height: 150px;
-  }
+  } */
 
   .ceremony-details,
   .ceremony-details strong {
@@ -1134,10 +1138,10 @@ fieldset legend {
     padding: 0;
   }
 
-  .timeline-details {
+  /* .timeline-details {
     padding: 0;
     margin-left: 2%;
-  }
+  } */
 
   .timeline-grid {
     gap: 5px;
@@ -1159,9 +1163,9 @@ fieldset legend {
     font-size: 0.8rem;
   }
 
-  .timeline-photo-placeholder {
+  /* .timeline-photo-placeholder {
     height: 10vh;
-  }
+  } */
 
   .album-section h3,
   .guest-section-guestbook {
@@ -1259,11 +1263,11 @@ fieldset legend {
     font-size: 0.6rem;
   }
 
-  .photo-placeholder {
+  /* .photo-placeholder {
     width: 80%;
     height: 10vh;
     min-height: 150px;
-  }
+  } */
 
   .ceremony-details,
   .ceremony-details strong {
@@ -1295,17 +1299,17 @@ fieldset legend {
     margin: -5% 0px -10px 28%;
   }
 
-  .timeline-photo-placeholder {
+  /* .timeline-photo-placeholder {
     height: 15vh;
     width: 95%;
     order: 2;
-  }
+  } */
 
-  .timeline-details {
+  /* .timeline-details {
     order: 1;
     padding: 10px;
     margin-left: 2%;
-  }
+  } */
 
   .timeline-grid {
     gap: 0px;
