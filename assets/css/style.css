@@ -96,18 +96,6 @@ body {
   padding: 0 20px;
 }
 
-/* .header-quote {
-  font-family: "FzAmericanTypewriter-Light", serif;
-  color: white;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.8rem;
-  white-space: nowrap;
-  position: absolute;
-  bottom: 35%;
-  padding: 0 20px;
-} */
-
 .save-date {
   background: #8b0000;
   color: white;
@@ -757,11 +745,6 @@ fieldset legend {
     font-size: 1.6rem;
   }
 
-  /* .photo-placeholder {
-    height: 25vh;
-    width: 50%;
-  } */
-
   #calendar-month {
     font-size: 2.5;
   }
@@ -805,12 +788,6 @@ fieldset legend {
   .timeline-item span {
     text-align: center;
   }
-
-  /* .timeline-photo-placeholder {
-    height: 50vh;
-    order: 2;
-  } */
-
   .album-section h3,
   .album-section-quote,
   .guest-section-guestbook {
@@ -862,11 +839,6 @@ fieldset legend {
     font-size: 1.2rem;
     /* bottom: 30%; */
   }
-
-  /* .save-date {
-    width: 55%;
-    margin-top: -45px;
-  } */
 
   .save-date h2,
   .save-date .date {
@@ -931,18 +903,6 @@ fieldset legend {
     margin: -5% 0px -10px 28%;
   }
 
-  /* .timeline-photo-placeholder {
-    width: 95%;
-    height: 40vh;
-    order: 2;
-  } */
-
-  /* .timeline-details {
-    order: 1;
-    padding: 10px;
-    margin-left: 2%;
-  } */
-
   .timeline-grid {
     gap: 5px;
   }
@@ -976,22 +936,6 @@ fieldset legend {
   .countdown-section .countdown {
     font-size: 2rem;
   }
-
-  /* .countdown-section {
-    margin-top: -18%;
-    margin-left: 5%;
-  } */
-
-  /* .countdown-section {
-    margin-left: 2%;
-  }
-
-  .countdown-title {
-    font-size: 24px;
-  }
-  .countdown {
-    font-size: 1rem;
-  } */
 }
 
 /* =============================
@@ -1092,12 +1036,6 @@ fieldset legend {
     font-size: 0.9rem;
   }
 
-  /* .photo-placeholder {
-    width: 90%;
-    height: 15vh;
-    min-height: 150px;
-  } */
-
   .ceremony-details,
   .ceremony-details strong {
     font-size: 1rem;
@@ -1138,11 +1076,6 @@ fieldset legend {
     padding: 0;
   }
 
-  /* .timeline-details {
-    padding: 0;
-    margin-left: 2%;
-  } */
-
   .timeline-grid {
     gap: 5px;
   }
@@ -1162,10 +1095,6 @@ fieldset legend {
     padding-top: 5%;
     font-size: 0.8rem;
   }
-
-  /* .timeline-photo-placeholder {
-    height: 10vh;
-  } */
 
   .album-section h3,
   .guest-section-guestbook {
@@ -1199,15 +1128,6 @@ fieldset legend {
     font-size: 0.9rem;
     padding: 0;
   }
-
-  /* .countdown-section {
-    margin-top: -25%;
-    margin-left: 5%;
-  } */
-
-  /* .countdown {
-    font-size: 1.4rem;
-  } */
 
   .countdown-section fieldset {
     margin: 10px;
@@ -1263,12 +1183,6 @@ fieldset legend {
     font-size: 0.6rem;
   }
 
-  /* .photo-placeholder {
-    width: 80%;
-    height: 10vh;
-    min-height: 150px;
-  } */
-
   .ceremony-details,
   .ceremony-details strong {
     font-size: 0.8rem;
@@ -1298,18 +1212,6 @@ fieldset legend {
     /* text-align: center; */
     margin: -5% 0px -10px 28%;
   }
-
-  /* .timeline-photo-placeholder {
-    height: 15vh;
-    width: 95%;
-    order: 2;
-  } */
-
-  /* .timeline-details {
-    order: 1;
-    padding: 10px;
-    margin-left: 2%;
-  } */
 
   .timeline-grid {
     gap: 0px;
