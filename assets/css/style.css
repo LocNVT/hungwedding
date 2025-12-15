@@ -64,7 +64,7 @@ body {
 }
 
 .header {
-  background: url("../images/Layout2535_05.jpg") no-repeat center center;
+  background: url("../images/Layout2535_05.webp") no-repeat center center;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -204,7 +204,7 @@ body {
 .photo-placeholder {
   width: 50%;
   aspect-ratio: 3 / 2; /* hoặc 16/9 tùy hình */
-  background: url("../images/GAU02015.JPG") no-repeat center center;
+  background: url("../images/GAU02015.webp") no-repeat center center;
   background-size: contain;
   background-color: #f0f0f0;
   margin: 0 auto;
@@ -338,7 +338,7 @@ body {
   width: 80%;
   /* aspect-ratio: 2 / 3; */
   aspect-ratio: 1 / 2;
-  background: url("../images/GAU04563.JPG") no-repeat center center;
+  background: url("../images/GAU04563.webp") no-repeat center center;
   background-size: contain;
   margin: 0 auto;
   display: flex;
